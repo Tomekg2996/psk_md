@@ -1,0 +1,102 @@
+kss<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nazwa Przedmiotu]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-button {
+            width: 200px;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+            background-color: #495057;
+            color: white;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .menu-button:hover {
+            background-color: #6c757d;
+            transform: scale(1.05);
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .exercise-list {
+            margin-top: 30px;
+            list-style: none;
+            padding: 0;
+        }
+        .exercise-list li {
+            margin: 10px 0;
+        }
+        .exercise-list a {
+            text-decoration: none;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+        .exercise-list a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html" class="menu-button">Home</a>
+        <a href="bioks.html" class="menu-button">BiOKS</a>
+        <a href="uisa.html" class="menu-button">UiSA</a>
+        <a href="prim.html" class="menu-button">PRiM</a>
+        <a href="kss.html" class="menu-button">KSS</a>
+        <a href="pocirp.html" class="menu-button">POCiRP</a>
+        <a href="eiua.html" class="menu-button">EiUA</a>
+        <a href="poisw.html" class="menu-button">POiSW</a>
+        <a href="kontakt.html" class="menu-button">Kontakt</a>
+    </div>
+    
+    <div class="content">
+        <h1>Programowanie obrabiarek CNC i robotów przemysłowych</h1>
+        <p>Wybierz ćwiczenie do pobrania:</p>
+        <ul class="exercise-list">
+            <li><a href="materials/pocirp/bioks_cw1.pdf" download>Ćwiczenie 1</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw2.pdf" download>Ćwiczenie 2</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw3.pdf" download>Ćwiczenie 3</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw4.pdf" download>Ćwiczenie 4</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw5.pdf" download>Ćwiczenie 5</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw6.pdf" download>Ćwiczenie 6</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw7.pdf" download>Ćwiczenie 7</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw8.pdf" download>Ćwiczenie 8</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw9.pdf" download>Ćwiczenie 9</a></li>
+            <li><a href="materials/pocirp/[przedmiot]_cw10.pdf" download>Ćwiczenie 10</a></li>
+        </ul>
+    </div>
+</body>
+</html>
