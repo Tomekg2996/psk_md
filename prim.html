@@ -1,4 +1,4 @@
-kss<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -45,8 +45,23 @@ kss<!DOCTYPE html>
             flex-grow: 1;
             text-align: center;
         }
-        .exercise-list {
+        .exercise-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             margin-top: 30px;
+        }
+        .exercise-section {
+            width: 45%;
+            text-align: center;
+        }
+        .divider {
+            width: 2px;
+            background-color: black;
+            height: auto;
+            margin: 0 20px;
+        }
+        .exercise-list {
             list-style: none;
             padding: 0;
         }
@@ -72,7 +87,7 @@ kss<!DOCTYPE html>
     <div class="sidebar">
         <h2>Menu</h2>
         <a href="index.html" class="menu-button">Home</a>
-        <a href="bioks.html" class="menu-button">BiOKSS</a>
+        <a href="bioks.html" class="menu-button">BiOKS</a>
         <a href="uisa.html" class="menu-button">UiSA</a>
         <a href="prim.html" class="menu-button">PRiM</a>
         <a href="kss.html" class="menu-button">KSS</a>
@@ -83,20 +98,26 @@ kss<!DOCTYPE html>
     </div>
     
     <div class="content">
-        <h1>Podstawy robotyki i mechanizacji</h1>
+        <h1>Podstawy Robotyki i Mechanizacji</h1>
         <p>Wybierz ćwiczenie do pobrania:</p>
-        <ul class="exercise-list">
-            <li><a href="materials/prim/bioks_cw1.pdf" download>Ćwiczenie 1</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw2.pdf" download>Ćwiczenie 2</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw3.pdf" download>Ćwiczenie 3</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw4.pdf" download>Ćwiczenie 4</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw5.pdf" download>Ćwiczenie 5</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw6.pdf" download>Ćwiczenie 6</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw7.pdf" download>Ćwiczenie 7</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw8.pdf" download>Ćwiczenie 8</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw9.pdf" download>Ćwiczenie 9</a></li>
-            <li><a href="materials/prim/[przedmiot]_cw10.pdf" download>Ćwiczenie 10</a></li>
-        </ul>
+        <div class="exercise-container">
+            <div class="exercise-section">
+                <h2>Projekt</h2>
+                <ul class="exercise-list">
+                    <li><a href="materials/prim/PRIM_projekt_wytyczne.pdf" download>Wytyczne do laboratorum</a></li>
+                    <li><a href="materials/prim/PRIM_projekt_przklad.pdf" download>Przykładowy projekt</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="exercise-section">
+                <h2>Laboratorium</h2>
+                <ul class="exercise-list">
+                    <li><a href="materials/prim/PRIM_lab_wytyczne.pdf" download>Wytyczne do laboratorum</a></li>
+                    <li><a href="materials/prim/PRIM_lab_przyklad.pdf" download>Przykładowe rozwiązanie</a></li>
+                    <li><a href="materials/prim/PRIM_wzory_polaczen.pdf" download>Wzory połączeń</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
