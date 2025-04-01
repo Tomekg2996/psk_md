@@ -45,6 +45,13 @@
             flex-grow: 1;
             text-align: center;
         }
+        /* Styl nazwy sprawozdania */
+        .report-name {
+            font-weight: bold;       /* Pogrubienie */
+            font-size: 18px;         /* Opcjonalnie zmień rozmiar czcionki */
+            margin-bottom: 20px;     /* Odstęp pod nazwą sprawozdania */
+            text-align: center;
+        }
         .exercise-container {
             display: flex;
             justify-content: center;
@@ -61,17 +68,16 @@
             height: auto;
             margin: 0 20px;
         }
-        /* Kluczowe zmiany poniżej */
         .exercise-list {
             list-style: none;
             padding: 0;
-            margin: 0;              /* Zerujemy margines, by łatwiej wyśrodkować */
-            display: flex;          /* Flexbox do wyśrodkowania przycisków */
-            justify-content: center;/* Wyśrodkowanie w poziomie */
-            align-items: center;    /* Wyrównanie w pionie (opcjonalne) */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .exercise-list li {
-            margin: 10px;          /* Odstępy między przyciskami */
+            margin: 10px;
         }
         .exercise-list a {
             text-decoration: none;
@@ -117,6 +123,12 @@
     </div>
     
     <div class="content">
+        
+        <!-- Nazwa sprawozdania -->
+        <div class="report-name">
+            EIUA_1E11A_KOWALSKI_NOWAK_SPR1
+        </div>
+        
         <h1>Struktura sprawozdania</h1>
         
         <!-- Główna treść z instrukcją tworzenia sprawozdania -->
@@ -159,7 +171,7 @@
             <h3>6. Formatowanie tekstu</h3>
             <ul>
                 <li><strong>Czcionka:</strong> Times New Roman.</li>
-                <li><strong>Rozmiar:</strong> tekst główny 12 pkt, nagłówki typu "1.1" 14, nagłówki typu "1." 16 pkt (pogrubione).</li>
+                <li><strong>Rozmiar:</strong> tekst główny 12 pkt, nagłówki typu "1.1" – 14 pkt, nagłówki typu "1." – 16 pkt (pogrubione).</li>
                 <li>Tekst wyjustowany, numeracja stron, odpowiednia interlinia (1,15 lub 1,5).</li>
             </ul>
             
@@ -199,7 +211,8 @@
             </ol>
             
             <p>
-                Tak opracowane sprawozdanie będzie czytelne, kompletne i będzie spełniało wymagane standardy edytorskie. Dbaj o estetykę, porządek i konsekwencję, aby dokument był profesjonalny i łatwy w odbiorze.
+                Tak opracowane sprawozdanie będzie czytelne, kompletne i będzie spełniało wymagane standardy edytorskie. 
+                Dbaj o estetykę, porządek i konsekwencję, aby dokument był profesjonalny i łatwy w odbiorze.
             </p>
         </div>
         
@@ -209,9 +222,9 @@
                 <h2>Wzory sprawozdań do pobrania</h2>
                 <ul class="exercise-list">
                     <li><a href="materials/spr/WzórSprawozdania1.docx" download>Przykładowe sprawozdanie nr 1.docx</a></li>
-                    <li><a href="materials/spr/WzórSprawozdania2.docx"  download>Przykładowe sprawozdanie nr 2.docx</a></li>
+                    <li><a href="materials/spr/WzórSprawozdania2.docx" download>Przykładowe sprawozdanie nr 2.docx</a></li>
                     <li><a href="materials/spr/WzórSprawozdania1.pdf" download>Przykładowe sprawozdanie nr 1.pdf</a></li>
-                    <li><a href="materials/spr/WzórSprawozdania2.pdf"  download>Przykładowe sprawozdanie nr 2.pdf</a></li>
+                    <li><a href="materials/spr/WzórSprawozdania2.pdf" download>Przykładowe sprawozdanie nr 2.pdf</a></li>
                 </ul>
             </div>
         </div>
